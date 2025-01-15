@@ -1,0 +1,5 @@
+# Configuration settings for the RAG Agent
+azure:
+  api_key: "your-azure-api-key"
+  endpoint: "https://your-resource-name.openai.azure.com"
+  engine: "text-embedding-ada-002"
