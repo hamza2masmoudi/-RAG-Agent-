@@ -1,45 +1,80 @@
 # Byte-compiled Python files
-__pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+__pycache__/
 
-# Virtual environment
+# Virtual environment directories
 venv/
 venvRAG/
-.venv/
 
+# Environment settings
+.env
+*.env
 
-# Python build files
-build/
-dist/
-*.egg-info/
-
-# Temporary files and logs
+# Logs and debug output
+logs/
 *.log
-*.tmp
-*.bak
-*.swp
-*.swo
-*.DS_Store
+
+# Test outputs
+Test/output/
+
+# Data files
+data/
+embeddings/
+
+# Configurations that may contain sensitive information
+config/settings.yaml
+
+# Compiled Python files
+*.pyc
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Config and sensitive files
-config/settings.yaml
-
-# PyCharm and VSCode files
-.idea/
+# IDE-specific files
 .vscode/
+.idea/
+*.swp
 
-# Operating system files
-Thumbs.db
+# OS-specific files
 .DS_Store
+Thumbs.db
 
-# Test output
+# Dependencies
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Generated files
+*.bak
+*.tmp
+*.old
 *.out
-*.coverage
 
-# Hugging Face cache
-huggingface_cache/
-transformers_cache/
+# Ignore outputs of embedding and PDF processing scripts
+*.txt
+*.pdf
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Build artifacts
+build/
+dist/
+*.egg
+*.whl
+
+# Notebook checkpoints
+*.ipynb_checkpoints
+
+# Exclude Python packaging artifacts
+*.egg-info/
+MANIFEST
